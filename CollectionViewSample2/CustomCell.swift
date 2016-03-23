@@ -1,9 +1,13 @@
-//
-//  CustomCell.swift
-//  CollectionViewSample2
-//
-//  Created by 林克彦 on 2016/03/23.
-//  Copyright © 2016年 Hayashidesu. All rights reserved.
-//
+import UIKit
 
-import Foundation
+class CustomCell: UICollectionViewCell {
+    @IBOutlet var imgSample:UIImageView!
+    @IBOutlet var lblSample:UILabel!
+    
+    override init(frame: CGRect){
+        super.init(frame: frame)
+    }
+    required init(coder aDecoder: NSCoder){
+        super.init(coder: aDecoder)!
+    }
+}
